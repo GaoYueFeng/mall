@@ -1,7 +1,7 @@
 package com.macro.mall.demo.controller;
 
-import com.macro.mall.demo.dto.CommonPage;
-import com.macro.mall.demo.dto.CommonResult;
+import com.macro.mall.common.api.CommonPage;
+import com.macro.mall.common.api.CommonResult;
 import com.macro.mall.demo.dto.PmsBrandDto;
 import com.macro.mall.demo.service.DemoService;
 import com.macro.mall.model.PmsBrand;
@@ -11,7 +11,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -19,9 +18,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * 测试controller
+ * 品牌管理示例controller
  */
-@Api(value = "demo", description = "demo详情")
+@Api(tags = "DemoController", description = "品牌管理示例接口")
 @Controller
 public class DemoController {
     @Autowired
